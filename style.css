@@ -1,0 +1,143 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #004d40;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 15px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#searchBtn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #009688;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.drink-section {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.group-section {
+  flex: 1;
+  background-color: #e0f2f1;
+  padding: 15px;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.drink-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.drink-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.drink-card h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.drink-card p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.drink-card button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.add {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.details {
+  background-color: #2196f3;
+  color: white;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#modalBody img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
